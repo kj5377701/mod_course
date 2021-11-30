@@ -10,13 +10,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class Registration {
     public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, Myfirstmod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCKS, Myfirstmod.MOD_ID); // register my mod as a blocks
 
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, Myfirstmod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, Myfirstmod.MOD_ID); //  register my mod as a item
 
     public static void register(){
-        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus(); // use eventbus on blocks and register
         BLOCKS.register(eventBus);
         ITEMS.register(eventBus);
     }
