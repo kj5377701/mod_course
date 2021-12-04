@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "firstmod:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "firstmod:copper_wire",
+    "count": 6
+  }
+}

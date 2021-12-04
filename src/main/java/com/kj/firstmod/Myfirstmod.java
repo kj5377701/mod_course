@@ -1,9 +1,12 @@
 package com.kj.firstmod;
 
+import com.kj.firstmod.block.Modblocks;
 import com.kj.firstmod.item.Moditems;
 import com.kj.firstmod.util.Registration;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,12 +29,20 @@ public class Myfirstmod
 {
     public static final String MOD_ID = "firstmod";
 
+    public static final ItemGroup MOD_TAP = new ItemGroup("modTap") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(Moditems.COPPER_WIRE.get());
+        }
+    };
+
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
     public Myfirstmod() {
         Registration.register();
         Moditems.register();
+        Modblocks.register();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

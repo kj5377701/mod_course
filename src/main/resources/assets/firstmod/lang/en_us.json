@@ -1,0 +1,8 @@
+{
+  "item.firstmod.copper_ingot": "Copper Ingot",
+  "block.firstmod.copper_block": "Copper Block",
+  "item.firstmod.copper_wire": "Copper Wire",
+  "blocks.firstmod.copper_ore": "Copper Ore",
+
+  "itemGroup.modTap": "mod tap"
+}
