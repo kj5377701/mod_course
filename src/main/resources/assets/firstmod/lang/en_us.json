@@ -1,7 +1,10 @@
 {
   "item.firstmod.copper_ingot": "Copper Ingot",
-  "block.firstmod.copper_block": "Copper Block",
   "item.firstmod.copper_wire": "Copper Wire",
+  "item.firstmod.coppered_apple": "Coppered apple",
+  "item.firstmod.copper_shovel": "Copper Shovel",
+
+  "block.firstmod.copper_block": "Copper Block",
   "blocks.firstmod.copper_ore": "Copper Ore",
 
   "itemGroup.modTap": "mod tap"
