@@ -2,7 +2,17 @@
   "item.firstmod.copper_ingot": "Copper Ingot",
   "item.firstmod.copper_wire": "Copper Wire",
   "item.firstmod.coppered_apple": "Coppered apple",
+
   "item.firstmod.copper_shovel": "Copper Shovel",
+  "item.firstmod.copper_axe": "Copper Axe",
+  "item.firstmod.copper_pickaxe": "Copper Pickaxe",
+  "item.firstmod.copper_sword": "Copper Sword",
+  "item.firstmod.copper_hoe": "Copper Hoe",
+
+  "item.firstmod.copper_helmet": "Copper Helmet",
+  "item.firstmod.copper_chestplate": "Copper Chestplate",
+  "item.firstmod.copper_leggings": "Copper Leggings",
+  "item.firstmod.copper_boots": "Copper Boots",
 
   "block.firstmod.copper_block": "Copper Block",
   "blocks.firstmod.copper_ore": "Copper Ore",

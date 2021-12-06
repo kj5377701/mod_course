@@ -1,6 +1,7 @@
 package com.kj.firstmod;
 
 import com.kj.firstmod.block.Modblocks;
+import com.kj.firstmod.events.ModEvents;
 import com.kj.firstmod.item.Moditems;
 import com.kj.firstmod.util.Registration;
 import net.minecraft.block.Block;
@@ -32,7 +33,7 @@ public class Myfirstmod
     public static final ItemGroup MOD_TAP = new ItemGroup("modTap") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(Moditems.COPPER_WIRE.get());
+            return new ItemStack(Moditems.COPPER_INGOT.get());
         }
     };
 
@@ -43,6 +44,9 @@ public class Myfirstmod
         Registration.register();
         Moditems.register();
         Modblocks.register();
+
+        MinecraftForge.EVENT_BUS.register(new ModEvents());
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading
